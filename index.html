@@ -2,58 +2,61 @@
 <html>
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="https://cdn.tailwindcss.com"></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <!-- aos js -->
- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <!-- google font -->
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-  rel="stylesheet">
- <style>
-  * {
-   font-family: 'Inter', sans-serif;
-  }
- </style>
- <script>
-  tailwind.config = {
-   theme: {
-    extend: {
-     colors: {
-      // color style 🌈
-      color1: '#A01C20',
-      color2: '#ED1F24',
-      color3: '#FBAD18',
-      color4: '#F6E016',
-      color5: '#000000',
-      color6: '#0B1A54',
-      color7: '#FEF4ED',
-      color8: '#FFFFFF',
-      color9: '#E2E2E2',
-      color10: '#858A8F'
-     },
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- aos js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- tailwand -->
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
     }
-   }
-  }
- </script>
- <style>
-  /* Dark Mode Styles */
-  .dark-mode {
-   background-color: #1f2937;
-   color: #f9fafb;
-  }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // color style 🌈
+            color1: '#A01C20',
+            color2: '#ED1F24',
+            color3: '#FBAD18',
+            color4: '#F6E016',
+            color5: '#000000',
+            color6: '#0B1A54',
+            color7: '#FEF4ED',
+            color8: '#FFFFFF',
+            color9: '#E2E2E2',
+            color10: '#858A8F'
+          },
 
-  /* Light Mode Styles */
-  .light-mode {
-   background-color: #f9fafb;
-   color: #1f2937;
-  }
- </style>
- <style type="text/tailwindcss">
-  @layer components {
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Dark Mode Styles */
+    .dark-mode {
+      background-color: #1f2937;
+      color: #f9fafb;
+    }
+
+    /* Light Mode Styles */
+    .light-mode {
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+  </style>
+  <style type="text/tailwindcss">
+    @layer components {
     /* container */
     .container {
      @apply px-2
@@ -162,166 +165,336 @@
 </head>
 
 <body class="bg-color8">
- <header class="w-full lg:bg-color8 absolute z-30">
-  <div class="container mx-auto">
-   <!-- hamburger menu -->
-   <div class="lg:hidden flex px-6 py-6 cursor-pointer hamburger-menu">
-    <svg fill="none" stroke="currentColor" width="40px" stroke-width="1.5" viewBox="0 0 24 24"
-     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-    </svg>
-   </div>
-   <!-- navbar items -->
-   <div
-    class="bg-color8 flex lg:flex-row flex-col  navbar-items lg:-translate-y-0 -translate-y-[150%] transition duration-700 ease-in-out justify-between items-center py-3">
-    <img src="/src/img/logo-idc.png" alt="" class="w-full max-w-[158px]  lg:mx-0 mx-auto">
-    <ul class="flex lg:flex-row flex-col  gap-7 items-center">
-     <li>
-      <a href="#" class="nav-item">HOME</a>
-     </li>
-     <li>
-      <a href="" class="nav-item">ABOUT</a>
-     </li>
-     <li>
-      <a href="" class="nav-item">PRODUCT</a>
-     </li>
-     <li>
-      <a href="" class="nav-item">ACHIEVEMNT</a>
-     </li>
-     <li>
-      <button class="btn1">IDC PORTOFOLIO</button>
-     </li>
-     <li>
-     </li>
-    </ul>
-   </div>
-  </div>
- </header>
- <main>
-  <!-- section 1 -->
-  <section class="min-h-screen flex justify-center items-center pt-20">
-   <div class="container mx-auto">
-    <div class="flex lg:flex-row flex-col justify-between">
-     <!-- left -->
-     <div class="lg:w-1/2 w-full lg:block hidden relative">
-      <img src="/src/img/img1.png" alt="" class="w-full max-w-lg mx-auto z-20" data-aos="zoom-in"
-       data-aos-duration="500">
-      <img src="/src/img/img1-bg.png" alt="" class="w-full absolute top-0 -z-10" data-aos="zoom-in"
-       data-aos-duration="1200">
-     </div>
-     <!-- right -->
-     <div class="lg:w-1/2 w-full flex flex-col justify-center">
-      <h1 class="lg:display2 md:display3 heading1 pb-5 text-color1">INSTIKI <br>
-       DEVELOPER CLUB</h1>
-      <p class="smalltext">Sebagai anggota UKM IDC, Anda akan memiliki kesempatan untuk belajar dan mengembangkan
-       keterampilan teknis,
-       seperti pemrograman, pengembangan aplikasi, desain UI/UX, analisis sistem, dan banyak lagi. Selain itu, Anda
-       dapat berpartisipasi dalam proyek-proyek yang relevan dengan kebutuhan kampus atau masyarakat luas.
-      </p>
-      <!-- button  -->
-      <div class="flex gap-5 py-7 ">
-       <button
-        class="py-4 px-8 rounded-lg bg-color1 text-color8 transition ease-in-out hover:border-color1 hover:border hover:text-color1 hover:bg-color8 shadow-red-1">Register
-        Client</button>
-       <button
-        class="py-4 px-8 rounded-lg border-color1 border text-color1 hover:bg-color1 hover:text-color8 transition ease-in-out shadow-red-1">Login
-        As
-        Member</button>
-      </div>
-      <!-- support -->
-      <div>
-       <p class="smalltext">Official Learning Partner</p>
-       <img src="/src/img/logo-instiki.png" alt="" class="pt-1.5">
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- section 2 -->
-  <section class="min-h-screen">
-   <!-- team -->
-   <div class="container mx-auto overflow-hidden">
-    <div class="flex  gap-[93px] pt-[70px] animate-scroll">
-     <img src="src/img/logo-airbnb.png" alt="">
-     <img src="src/img/logo-amazon.png" alt="">
-     <img src="src/img/logo-creative-market.png" alt="">
-     <img src="src/img/logo-google.png" alt="">
-     <img src="src/img/logo-shopify.png" alt="">
-     <img src="src/img/logo-airbnb.png" alt="">
-     <img src="src/img/logo-amazon.png" alt="">
-     <img src="src/img/logo-creative-market.png" alt="">
-     <img src="src/img/logo-google.png" alt="">
-     <img src="src/img/logo-shopify.png" alt="">
-    </div>
-   </div>
-   <!-- content -->
-   <div class="bg-cover lg:bg-repeat bg-no-repeat lg:py-0 py-40" style="background-image: url('/src/img/Bg.png');">
+  <header class="w-full lg:bg-color8 absolute z-30">
     <div class="container mx-auto">
-     <div class="min-h-screen flex lg:flex-row flex-col-reverse justify-center items-center lg:gap-10 gap-40">
-      <!-- left -->
-      <div class="text-color9 lg:w-1/2 w-full">
-       <div>
-        <h2 class="lg:heading2 md:heading3 heading4">“Developing Cutting-Edge Software Solutions, Empowering Innovation”
-        </h2>
-        <p class="smalltext">VISI IDC</p>
-       </div>
-       <div class="pt-10">
-        <h3 class="lg:heading2 md:heading3 heading4">MISI IDC DEVELOPER</h3>
-        <ol class="smalltext text-justify">
-         <li class="flex gap-2">
-          <div>
-           1.
-          </div>
-          <div>
-           Empowering members through training, collaboration, and impactful projects for positive contributions to
-           campus and society.
-          </div>
-         </li>
-         <li class="flex gap-2">
-          <div>
-           2.
-          </div>
-          <div>
-           Partnerships: Building strong collaborations with campus, external organizations, and tech companies for
-           development, knowledge exchange, and opportunities.
-          </div>
-         </li>
-         <li class="flex gap-2">
-          <div>
-           3.
-          </div>
-          <div>
-           Skills Development: Enhancing members' technical skills in programming, app development, UI/UX design, and
-           related technologies through training, workshops, and practical experiences.
-          </div>
-         </li>
-         <li class="flex gap-2">
-          <div>
-           4.
-          </div>
-          <div>
-           Inspiration and Empowerment: Providing an environment that inspires and empowers UKM IDC members to grow
-           personally and professionally, fostering learning, creativity, leadership, and social skills.
-          </div>
-         </li>
-        </ol>
-       </div>
+      <!-- hamburger menu -->
+      <div class="lg:hidden flex px-6 py-6 cursor-pointer hamburger-menu">
+        <svg fill="none" stroke="currentColor" width="40px" stroke-width="1.5" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
       </div>
-      <!-- right -->
-      <div class="lg:w-1/2 w-full relative flex justify-center items-center">
-       <img src="/src/img/img2-bg.png" alt="" class="w-full absolute -top-10 max-w-xl" data-aos="zoom-in"
-        data-aos-duration="1200">
-       <img src="/src/img/img2.png" alt="" class="w-full max-w-lg z-10" data-aos="zoom-in" data-aos-duration="500">
+      <!-- navbar items -->
+      <div
+        class="bg-color8 flex lg:flex-row flex-col  navbar-items lg:-translate-y-0 -translate-y-[150%] transition duration-700 ease-in-out justify-between items-center py-3">
+        <img src="/src/img/logo-idc.png" alt="" class="w-full max-w-[158px]  lg:mx-0 mx-auto">
+        <ul class="flex lg:flex-row flex-col  gap-7 items-center">
+          <li>
+            <a href="#" class="nav-item">HOME</a>
+          </li>
+          <li>
+            <a href="" class="nav-item">ABOUT</a>
+          </li>
+          <li>
+            <a href="" class="nav-item">PRODUCT</a>
+          </li>
+          <li>
+            <a href="" class="nav-item">ACHIEVEMNT</a>
+          </li>
+          <li>
+            <button class="btn1">IDC PORTOFOLIO</button>
+          </li>
+          <li>
+          </li>
+        </ul>
       </div>
-     </div>
     </div>
-   </div>
-  </section>
- </main>
- <footer>
+  </header>
+  <main>
+    <!-- section 1 -->
+    <section class="min-h-screen flex justify-center items-center pt-20">
+      <div class="container mx-auto">
+        <div class="flex lg:flex-row flex-col justify-between">
+          <!-- left -->
+          <div class="lg:w-1/2 w-full lg:block hidden relative">
+            <img src="/src/img/img1.png" alt="" class="w-full max-w-lg mx-auto z-20" data-aos="zoom-in"
+              data-aos-duration="500">
+            <img src="/src/img/img1-bg.png" alt="" class="w-full absolute top-0 -z-10" data-aos="zoom-in"
+              data-aos-duration="1200">
+          </div>
+          <!-- right -->
+          <div class="lg:w-1/2 w-full flex flex-col justify-center">
+            <h1 class="lg:display2 md:display3 heading1 pb-5 text-color1">INSTIKI <br>
+              DEVELOPER CLUB</h1>
+            <p class="smalltext">Sebagai anggota UKM IDC, Anda akan memiliki kesempatan untuk belajar dan mengembangkan
+              keterampilan teknis,
+              seperti pemrograman, pengembangan aplikasi, desain UI/UX, analisis sistem, dan banyak lagi. Selain itu,
+              Anda
+              dapat berpartisipasi dalam proyek-proyek yang relevan dengan kebutuhan kampus atau masyarakat luas.
+            </p>
+            <!-- button  -->
+            <div class="flex gap-5 py-7 ">
+              <button
+                class="py-4 px-8 rounded-lg bg-color1 text-color8 transition ease-in-out hover:border-color1 hover:border hover:text-color1 hover:bg-color8 shadow-red-1">Register
+                Client</button>
+              <button
+                class="py-4 px-8 rounded-lg border-color1 border text-color1 hover:bg-color1 hover:text-color8 transition ease-in-out shadow-red-1">Login
+                As
+                Member</button>
+            </div>
+            <!-- support -->
+            <div>
+              <p class="smalltext">Official Learning Partner</p>
+              <img src="/src/img/logo-instiki.png" alt="" class="pt-1.5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="min-h-screen">
+      <!-- team -->
+      <div class="container mx-auto overflow-hidden">
+        <div class="flex  gap-[93px] pt-[70px] animate-scroll">
+          <img src="src/img/logo-airbnb.png" alt="">
+          <img src="src/img/logo-amazon.png" alt="">
+          <img src="src/img/logo-creative-market.png" alt="">
+          <img src="src/img/logo-google.png" alt="">
+          <img src="src/img/logo-shopify.png" alt="">
+          <img src="src/img/logo-airbnb.png" alt="">
+          <img src="src/img/logo-amazon.png" alt="">
+          <img src="src/img/logo-creative-market.png" alt="">
+          <img src="src/img/logo-google.png" alt="">
+          <img src="src/img/logo-shopify.png" alt="">
+        </div>
+      </div>
+      <!-- content -->
+      <div class="bg-cover lg:bg-repeat bg-no-repeat lg:py-0 py-40" style="background-image: url('/src/img/Bg.png');">
+        <div class="container mx-auto">
+          <div class="min-h-screen flex lg:flex-row flex-col-reverse justify-center items-center lg:gap-10 gap-40">
+            <!-- left -->
+            <div class="text-color9 lg:w-1/2 w-full">
+              <div>
+                <h2 class="lg:heading2 md:heading3 heading4">“Developing Cutting-Edge Software Solutions, Empowering
+                  Innovation”
+                </h2>
+                <p class="smalltext">VISI IDC</p>
+              </div>
+              <div class="pt-10">
+                <h3 class="lg:heading2 md:heading3 heading4">MISI IDC DEVELOPER</h3>
+                <ol class="smalltext text-justify">
+                  <li class="flex gap-2">
+                    <div>
+                      1.
+                    </div>
+                    <div>
+                      Empowering members through training, collaboration, and impactful projects for positive
+                      contributions to
+                      campus and society.
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <div>
+                      2.
+                    </div>
+                    <div>
+                      Partnerships: Building strong collaborations with campus, external organizations, and tech
+                      companies for
+                      development, knowledge exchange, and opportunities.
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <div>
+                      3.
+                    </div>
+                    <div>
+                      Skills Development: Enhancing members' technical skills in programming, app development, UI/UX
+                      design, and
+                      related technologies through training, workshops, and practical experiences.
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <div>
+                      4.
+                    </div>
+                    <div>
+                      Inspiration and Empowerment: Providing an environment that inspires and empowers UKM IDC members
+                      to grow
+                      personally and professionally, fostering learning, creativity, leadership, and social skills.
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="lg:w-1/2 w-full relative flex justify-center items-center">
+              <img src="/src/img/img2-bg.png" alt="" class="w-full absolute -top-10 max-w-xl" data-aos="zoom-in"
+                data-aos-duration="1200">
+              <img src="/src/img/img2.png" alt="" class="w-full max-w-lg z-10" data-aos="zoom-in"
+                data-aos-duration="500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 6 -->
+    <section class="bg-[#F5F6FA]">
+      <div class="min-h-screen py-10">
+        <!-- title -->
+        <div class="flex flex-col justify-center items-center relative z-10">
+          <p class="bodytext text-color3">Blog & News Update </p>
+          <h1 class="display3 pt-2.5">READ OUR NEWS</h1>
+        </div>
+        <div class="container mx-auto pt-14 relative">
+          <!-- components -->
+          <div>
+            <img src="/src/img/img-section6-1.svg" alt="" data-aos="zoom-in" data-aos-duration="2000"
+              class="absolute top-0 -left-20">
+            <img src="/src/img/img-section6-2.svg" alt="" data-aos="zoom-in" data-aos-duration="2000"
+              class="absolute -bottom-10 -left-20">
+            <img src="/src/img/img-section6-3.svg" alt="" data-aos="zoom-in" data-aos-duration="2000"
+              class="absolute -top-8 right-0">
+          </div>
+          <!-- Swiper -->
+          <div class="swiper mySwiper-section6">
+            <div class="swiper-wrapper">
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="mx-auto bg-white max-w-[356px] rounded-lg shadow-gray-2 transition cursor-pointer">
+                  <!-- image -->
+                  <img src="/src/img/img-section6.png" alt="" class="object-cover w-[439px] h-[331px] rounded-t-lg">
+                  <!-- desc -->
+                  <div class="px-6 py-5">
+                    <h3 class="heading5">UKM IDC Raih Penghargaan Inovasi</h3>
+                    <p class="smalltext text-color10 pt-3">Solusi teknologi inovatif UKM IDC meraih penghargaan
+                      prestisius.
+                    </p>
+                    <a href="#" class="flex items-center gap-4 pt-8">
+                      Read story
+                      <img src="/src/img/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="mx-auto bg-white max-w-[356px] rounded-lg shadow-gray-2 transition cursor-pointer">
+                  <!-- image -->
+                  <img src="/src/img/img-section6.png" alt="" class="object-cover w-[439px] h-[331px] rounded-t-lg">
+                  <!-- desc -->
+                  <div class="px-6 py-5">
+                    <h3 class="heading5">UKM IDC Raih Penghargaan Inovasi</h3>
+                    <p class="smalltext text-color10 pt-3">Solusi teknologi inovatif UKM IDC meraih penghargaan
+                      prestisius.
+                    </p>
+                    <a href="#" class="flex items-center gap-4 pt-8">
+                      Read story
+                      <img src="/src/img/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="mx-auto bg-white max-w-[356px] rounded-lg shadow-gray-2 transition cursor-pointer">
+                  <!-- image -->
+                  <img src="/src/img/img-section6.png" alt="" class="object-cover w-[439px] h-[331px] rounded-t-lg">
+                  <!-- desc -->
+                  <div class="px-6 py-5">
+                    <h3 class="heading5">UKM IDC Raih Penghargaan Inovasi</h3>
+                    <p class="smalltext text-color10 pt-3">Solusi teknologi inovatif UKM IDC meraih penghargaan
+                      prestisius.
+                    </p>
+                    <a href="#" class="flex items-center gap-4 pt-8">
+                      Read story
+                      <img src="/src/img/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="mx-auto bg-white max-w-[356px] rounded-lg shadow-gray-2 transition cursor-pointer">
+                  <!-- image -->
+                  <img src="/src/img/img-section6.png" alt="" class="object-cover w-[439px] h-[331px] rounded-t-lg">
+                  <!-- desc -->
+                  <div class="px-6 py-5">
+                    <h3 class="heading5">UKM IDC Raih Penghargaan Inovasi</h3>
+                    <p class="smalltext text-color10 pt-3">Solusi teknologi inovatif UKM IDC meraih penghargaan
+                      prestisius.
+                    </p>
+                    <a href="#" class="flex items-center gap-4 pt-8">
+                      Read story
+                      <img src="/src/img/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="mx-auto bg-white max-w-[356px] rounded-lg shadow-gray-2 transition cursor-pointer">
+                  <!-- image -->
+                  <img src="/src/img/img-section6.png" alt="" class="object-cover w-[439px] h-[331px] rounded-t-lg">
+                  <!-- desc -->
+                  <div class="px-6 py-5">
+                    <h3 class="heading5">UKM IDC Raih Penghargaan Inovasi</h3>
+                    <p class="smalltext text-color10 pt-3">Solusi teknologi inovatif UKM IDC meraih penghargaan
+                      prestisius.
+                    </p>
+                    <a href="#" class="flex items-center gap-4 pt-8">
+                      Read story
+                      <img src="/src/img/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="mx-auto bg-white max-w-[356px] rounded-lg shadow-gray-2 transition cursor-pointer">
+                  <!-- image -->
+                  <img src="/src/img/img-section6.png" alt="" class="object-cover w-[439px] h-[331px] rounded-t-lg">
+                  <!-- desc -->
+                  <div class="px-6 py-5">
+                    <h3 class="heading5">UKM IDC Raih Penghargaan Inovasi</h3>
+                    <p class="smalltext text-color10 pt-3">Solusi teknologi inovatif UKM IDC meraih penghargaan
+                      prestisius.
+                    </p>
+                    <a href="#" class="flex items-center gap-4 pt-8">
+                      Read story
+                      <img src="/src/img/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 7 -->
+    <section class="overflow-x-hidden">
+      <div
+        class="min-h-screen flex justify-center items-center lg:flex-row flex-col gap-20 container mx-auto lg:py-10 py-20">
+        <div class="relative lg:w-1/2 w-full">
+          <img src="/src/img/img-section7-1-1.png" alt="image component"
+            class="w-full max-w-[353px] absolute -bottom-20 -right-4 -z-10">
+          <img src="/src/img/img-section7-1-2.png" alt="image component"
+            class="w-full max-w-[315px] absolute -top-20 -left-14 -z-10">
+          <img src="/src/img/img-section7-1.png" alt="image" class="w-full rounded-lg shadow-gray-1 max-w-[604px]">
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <h2 class="display3">WRITE <br /> ANYWHERE <br /> EVERYWHERE! <br />
+            <span class="text-color2">BE DEVELOPER!</span>
+          </h2>
+          <p class="heading5 text-color10 pt-4 max-w-[441px] text-justify">Pemrograman, pengembangan aplikasi, desain
+            UI/UX, analisis
+            sistem, dan
+            banyak
+            lagi.
+            Selain
+            itu, Anda dapat
+            berpartisipasi dalam proyek-proyek yang relevan dengan kebutuhan kampus atau masyarakat luas.</p>
+          <button class="text-white py-4 px-8 rounded-lg bg-color6 mt-9">CONTACT US</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
 
- </footer>
+  </footer>
 </body>
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- aos js -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- script js -->
