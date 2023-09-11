@@ -3,3 +3,7 @@
  # Optimizing for production
 
  npx tailwindcss -o build.css --minify
+
+ # link demo
+
+ https://tsd-mini-hackathon-2023.vercel.app/
