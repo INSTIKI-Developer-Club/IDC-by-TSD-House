@@ -1169,6 +1169,22 @@ video {
   max-width: 36rem;
 }
 
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
+.max-w-\[150px\] {
+  max-width: 150px;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -3255,6 +3271,10 @@ video {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:max-w-\[\] {
+    max-width: ;
   }
 
   .lg\:-translate-y-0 {
